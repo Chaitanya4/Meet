@@ -1,21 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import {Container} from "react-bootstrap";
 const Header = () => {
   return (
-    <div className="header">
-      <Link to='/'>
-        <div className="logo"></div>
-      </Link>
-      <div className="upload-container">
-        <div className="section">
-          <Link to='/upload'>
-            <div className="upload" />
-          </Link>
-          <img className="personal" src="https://i.imgur.com/QwZod6m.png" />
-        </div>
-      </div>
-    </div>
+    <Container style={{backgroundColor:' #def3f3'}}>
+   
+    
+     <h1 style={{textAlign:'center', width:'100%',margin:40,padding:25,color:'blue'}}>MeetDocs</h1>
+   
+   
+    </Container>
   )  
 }
   

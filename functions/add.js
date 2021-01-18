@@ -1,7 +1,7 @@
 const faker = require("faker")
 const { createClient } = require("@astrajs/collections")
 let id = faker.random.uuid()
-const collection = "tktkposts"
+const collection = "meetdocs"
 
 exports.handler = async function (event, context, callback) {
   const astraClient = await createClient({
@@ -17,7 +17,6 @@ exports.handler = async function (event, context, callback) {
 
   try {
     const user = await users.create(id, event.body)
-
     return {
       statusCode: 200,
       body: JSON.stringify(user),
